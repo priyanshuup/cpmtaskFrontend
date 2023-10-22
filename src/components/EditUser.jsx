@@ -59,8 +59,8 @@ const loadUserDetails = async () =>{
         <InputLabel>Name</InputLabel>
         <Input
           onChange={(e) => onValueChange(e)}
-          name="name"
-          value={user.name}
+          name="fname"
+          value={user.fname}
         />
       </FormControl>
 
@@ -68,8 +68,33 @@ const loadUserDetails = async () =>{
         <InputLabel>Username</InputLabel>
         <Input
           onChange={(e) => onValueChange(e)}
-          name="username"
-          value={user.username}
+          name="lname"
+          value={user.lname}
+        />
+      </FormControl>
+      <FormControl>
+        <InputLabel>Job Title</InputLabel>
+        <Input
+          onChange={(e) => onValueChange(e)}
+          name="jobTitle"
+          value={user.jobTitle}
+        />
+      </FormControl>
+      <FormControl>
+        <InputLabel>Employee Code</InputLabel>
+        <Input
+          onChange={(e) => onValueChange(e)}
+          name="ecode"
+          value={user.ecode}
+        />
+      </FormControl>
+
+      <FormControl>
+        <InputLabel>Phone</InputLabel>
+        <Input
+          onChange={(e) => onValueChange(e)}
+          name="phone"
+          value= {user.phone}
         />
       </FormControl>
 
@@ -82,14 +107,7 @@ const loadUserDetails = async () =>{
         />
       </FormControl>
 
-      <FormControl>
-        <InputLabel>Phone</InputLabel>
-        <Input
-          onChange={(e) => onValueChange(e)}
-          name="phone"
-          value= "87999471162"
-        />
-      </FormControl>
+      
 
       <FormControl>
         <Button variant="contained" onClick={() => editUserDetails()}>
